@@ -11,6 +11,7 @@
 @interface OGMCoursesViewController ()
 
 @property (nonatomic) NSURLSession *session;
+@property (nonatomic, copy) NSArray *courses;
 
 @end
 
@@ -32,15 +33,28 @@
     return self;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView
+- (void)viewDidLoad
 {
-    return 0;
+    [super viewDidLoad];
+    
+    [self.tableView registerClass:[UITableViewCell class]
+           forCellReuseIdentifier:@"UITableViewCell"];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.courses count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
     cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"
+                                                            forIndexPath:indexPath];
+    NSDictionary *course =  self.courses[indexPath.row];
+    cell.textLabel.text = course[@"title"];
+    
+    return cell;
 }
 
 - (void)fetchFeed
@@ -51,10 +65,20 @@
     
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req
                                                      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
-                                                         NSString *json = [[NSString alloc]initWithData:data
-                                                                                               encoding:NSUTF8StringEncoding];
-                                                         NSLog(@"%@",json);
-                                                     }];
+                                                         NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                                     options:0
+                                                                                                                       error:nil];
+                                                         //NSLog(@"%@",jsonObject);
+                                                         self.courses = jsonObject[@"courses"];
+                                                         NSLog(@"%@", self.courses);
+                                                         
+                                                         dispatch_async(dispatch_get_main_queue(), ^{
+                                                             [self.tableView reloadData];
+                                                         });
+                                          
+                                                     }
+                                      ];
+                                      
     [dataTask resume];
 }
 
