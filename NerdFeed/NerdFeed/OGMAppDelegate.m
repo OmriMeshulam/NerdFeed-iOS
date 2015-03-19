@@ -8,6 +8,7 @@
 
 #import "OGMAppDelegate.h"
 #import "OGMCoursesViewController.h"
+#import "OGMWebViewController.h"
 
 @interface OGMAppDelegate ()
 
@@ -22,6 +23,9 @@
     OGMCoursesViewController *cvc = [[OGMCoursesViewController alloc]initWithStyle:UITableViewStylePlain];
     
     UINavigationController *masterNav = [[UINavigationController alloc]initWithRootViewController:cvc];
+    
+    OGMWebViewController *wvc = [[OGMWebViewController alloc]init];
+    cvc.webViewController = wvc;
     
     self.window.rootViewController = masterNav;
     

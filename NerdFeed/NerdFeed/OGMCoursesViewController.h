@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class OGMWebViewController;
+
 @interface OGMCoursesViewController : UITableViewController
+
+@property (nonatomic) OGMWebViewController *webViewController;
 
 @end

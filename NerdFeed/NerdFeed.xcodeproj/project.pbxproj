@@ -15,6 +15,7 @@
 		CF9B66601ABB3689009CDDB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9B665E1ABB3689009CDDB7 /* LaunchScreen.xib */; };
 		CF9B666C1ABB3689009CDDB7 /* NerdFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B666B1ABB3689009CDDB7 /* NerdFeedTests.m */; };
 		CF9B66771ABB36CB009CDDB7 /* OGMCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B66761ABB36CB009CDDB7 /* OGMCoursesViewController.m */; };
+		CF9B667A1ABB48DE009CDDB7 /* OGMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B66791ABB48DE009CDDB7 /* OGMWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		CF9B666B1ABB3689009CDDB7 /* NerdFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdFeedTests.m; sourceTree = "<group>"; };
 		CF9B66751ABB36CB009CDDB7 /* OGMCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMCoursesViewController.h; sourceTree = "<group>"; };
 		CF9B66761ABB36CB009CDDB7 /* OGMCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMCoursesViewController.m; sourceTree = "<group>"; };
+		CF9B66781ABB48DE009CDDB7 /* OGMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMWebViewController.h; sourceTree = "<group>"; };
+		CF9B66791ABB48DE009CDDB7 /* OGMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				CF9B664F1ABB3689009CDDB7 /* Supporting Files */,
 				CF9B66751ABB36CB009CDDB7 /* OGMCoursesViewController.h */,
 				CF9B66761ABB36CB009CDDB7 /* OGMCoursesViewController.m */,
+				CF9B66781ABB48DE009CDDB7 /* OGMWebViewController.h */,
+				CF9B66791ABB48DE009CDDB7 /* OGMWebViewController.m */,
 			);
 			path = NerdFeed;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9B66581ABB3689009CDDB7 /* OGMViewController.m in Sources */,
+				CF9B667A1ABB48DE009CDDB7 /* OGMWebViewController.m in Sources */,
 				CF9B66551ABB3689009CDDB7 /* OGMAppDelegate.m in Sources */,
 				CF9B66521ABB3689009CDDB7 /* main.m in Sources */,
 				CF9B66771ABB36CB009CDDB7 /* OGMCoursesViewController.m in Sources */,
