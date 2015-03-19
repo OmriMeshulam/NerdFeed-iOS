@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F22BF8E0-042D-447E-89E2-B60991BABCAF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NerdFeed</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4825BADCE7FC762330655EC71CBBD79F27EFE90F</key>
+		<string>https://github.com/OmriMeshulam/NerdFeed-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gold Challenge/Chapter 21/NerdFeed.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4825BADCE7FC762330655EC71CBBD79F27EFE90F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OmriMeshulam/NerdFeed-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4825BADCE7FC762330655EC71CBBD79F27EFE90F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4825BADCE7FC762330655EC71CBBD79F27EFE90F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NerdFeed</string>
+		</dict>
+	</array>
+</dict>
+</plist>
