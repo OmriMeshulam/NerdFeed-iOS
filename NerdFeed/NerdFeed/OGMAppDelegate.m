@@ -27,7 +27,27 @@
     OGMWebViewController *wvc = [[OGMWebViewController alloc]init];
     cvc.webViewController = wvc;
     
-    self.window.rootViewController = masterNav;
+    // Checking to make sure we are running on an ipad
+    if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad){
+        
+        // webViewController must be in navigation controller; you will see why later
+        UINavigationController *detailNav = [[UINavigationController alloc]initWithRootViewController:wvc];
+       
+        UISplitViewController *svc = [[UISplitViewController alloc]init];
+        
+        
+        // Setting the delegate of the split view controller to the detail VC
+        // You will see why later - ignore warning
+        svc.delegate = wvc;
+        
+        svc.viewControllers = @[masterNav, detailNav];
+        
+        // Setting the root view controllers of the window to the split view controller
+        self.window.rootViewController = svc;
+    }else{
+        // On noniPad devices
+        self.window.rootViewController = masterNav;
+    }
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

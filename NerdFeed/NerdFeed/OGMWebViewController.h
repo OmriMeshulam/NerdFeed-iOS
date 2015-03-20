@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OGMWebViewController : UIViewController
+@interface OGMWebViewController : UIViewController <UISplitViewControllerDelegate>
 
 @property (nonatomic) NSURL *URL;
 
